@@ -7,8 +7,7 @@ function App() {
   const handleRequest = async () => {
     setLoading(true);
     const { data } = await axios.get(
-      "https://chat-app-back-6bsl.onrender.com/api/user/login",
-      { emal: "test", password: "test" }
+      "https://chat-app-back-zsof.onrender.com/"
     );
     setUsers(data.data);
     setLoading(false);
