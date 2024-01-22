@@ -6,7 +6,9 @@ function App() {
   const [users, setUsers] = useState();
   const handleRequest = async () => {
     setLoading(true);
-    const { data } = await axios.get("http://localhost:5000/sample");
+    const { data } = await axios.get(
+      "https://deploy-mern-api-eight-topaz.vercel.app/sample"
+    );
     setUsers(data.data);
     setLoading(false);
   };
