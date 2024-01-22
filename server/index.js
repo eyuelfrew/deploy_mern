@@ -8,8 +8,7 @@ app.use(cors());
 app.use(express.json());
 const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
-  console.log("Hello World!");
-  res.status(200).json({ name: "eyuel frew", age: 25 });
+  res.status(200).json("hello there");
 });
 app.get("/sample", (req, res) => {
   res.status(200).json({ data });
