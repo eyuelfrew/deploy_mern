@@ -7,7 +7,7 @@ function App() {
   const handleRequest = async () => {
     setLoading(true);
     const { data } = await axios.get(
-      "https://chat-app-back-zsof.onrender.com/"
+      "https://chat-app-back-zsof.onrender.com/sample"
     );
     setUsers(data.data);
     setLoading(false);
