@@ -7,7 +7,8 @@ function App() {
   const handleRequest = async () => {
     setLoading(true);
     const { data } = await axios.get(
-      "https://deploy-mern-api-eight-topaz.vercel.app/sample"
+      "https://chat-app-back-6bsl.onrender.com/api/user/login",
+      { emal: "test", password: "test" }
     );
     setUsers(data.data);
     setLoading(false);
